@@ -1,8 +1,7 @@
 var mqtt    = require('mqtt');
 var client  = mqtt.connect('mqtt://test.mosquitto.org');
 
-
-
+// Generate random wind data
 function getWind(){
 	return JSON.stringify({
 		speed: Math.floor(Math.random() * 99) + 9,
@@ -10,6 +9,7 @@ function getWind(){
 	});	
 }
 
+// Generate random dht22 data
 function getDHT22(){
 	return JSON.stringify({
 		temperature: Math.floor(Math.random() * 33) + 22,
@@ -17,6 +17,7 @@ function getDHT22(){
 	});	
 }
 
+// Generate random bmp180 data
 function getBMP180(){
 	return JSON.stringify({
 		'sealevel_pressure': Math.floor(Math.random() * 1000000) + 900000,
@@ -26,6 +27,7 @@ function getBMP180(){
 	});	
 }
 
+// Publish to Moquitto
 function sendWind(payload){
 	setTimeout(function(){		
 		client.publish('00e04c81aaca-wind', payload);						
@@ -50,28 +52,23 @@ function sendDHT22(payload){
 	}, Math.floor(Math.random() * 4000) + 2000);
 }
 
+// Subscribe to the weather station and soil moisture topics.
 client.on('connect', function () {
   client.subscribe('18fe34fc04de-soil');
   client.subscribe('00e04c81aaca-wind');
   client.subscribe('00e04c81aaca-rain');
   client.subscribe('00e04c81aaca-bmp180');
   client.subscribe('00e04c81aaca-dht22');
-  //sendWind(getWind());
-  //sendBMP180(getBMP180());
-  //sendDHT22(getDHT22());
+
+  /*
+  	Stop sending random data.
+  	sendWind(getWind());
+  	sendBMP180(getBMP180());
+  	sendDHT22(getDHT22());
+  */
+
 });
 
 client.on('message', function (topic, message) {	
 	console.log(message.toString());
 });
-
-/*
-
-wlan0     Link encap:Ethernet  HWaddr 00:e0:4c:81:aa:ca  
-          inet addr:192.168.0.23  Bcast:192.168.0.255  Mask:255.255.255.0
-          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
-          RX packets:143 errors:0 dropped:0 overruns:0 frame:0
-          TX packets:44 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
-          RX bytes:18491 (18.0 KiB)  TX bytes:6775 (6.6 KiB)
-*/
