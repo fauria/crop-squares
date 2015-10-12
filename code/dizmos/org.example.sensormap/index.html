@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SensorMap</title>
+
+    <!-- Your own stylesheet (do not remove!)-->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+    <script type="text/javascript" src="assets/lib/mqtt/mqttws31.js"></script>
+
+    <!-- Map Rectangle-->
+    <!-- reference to Leaflet CSS -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <!-- reference to Leaflet JavaScript -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <!-- set width and height styles for map -->
+    <style>
+    #map {
+    width: 960px;
+        height:500px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <div id="front">
+        <!-- Map Rectangle-->
+        <!-- place holder for map -->
+    <div id="map"></div>
+        <script>
+
+        var handler=function(e){
+            console.log(e);
+
+            var a=viewer.getDizmos;
+            for (var i=0; i<a.length; i++) {
+                a[i].privateStorage.setProperty("doClose","close");
+            }
+
+            var station= '"'+e+'"';
+            var newBundle = new dizmojs.Bundle('org.example.pressure');
+            var newDizmo = newBundle.instantiateDizmo({
+                'geometry/x' : 150 ,
+                'geometry/y' : -500
+            },{"station":station});
+
+            var newBundle = new dizmojs.Bundle('org.example.raingauge');
+            var newDizmo = newBundle.instantiateDizmo({
+                'geometry/x' : 350 ,
+                'geometry/y' : -500
+            },{"station":station});
+
+            var newBundle = new dizmojs.Bundle('org.example.ambient');
+            var newDizmo = newBundle.instantiateDizmo({
+                'geometry/x' : 550 ,
+                'geometry/y' : -500
+            },{"station":station});
+
+            var newBundle = new dizmojs.Bundle('org.example.wind');
+            var newDizmo = newBundle.instantiateDizmo({
+                'geometry/x' : 750 ,
+                'geometry/y' : -500
+            },{"station":station});
+        }
+
+        // create map object, tell it to live in 'map' div and give initial latitude, longitude, zoom values
+        // pass option to turn scroll wheel zoom off
+        var map = L.map('map',{scrollWheelZoom:false}).setView([39.286425, -6.379895], 10);
+
+        // add base map tiles from OpenStreetMap and attribution info to 'map' div
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // define rectangle geographical bounds
+        var bounds1 = [[39.29684 , -6.40605], [39.286425, -6.38861333]];
+        var bounds2 = [[39.29684, -6.38861333], [39.286425, -6.37117666]];
+        var bounds3 = [[39.29684, -6.37117666], [39.286425, -6.35374]];
+
+        var bounds4 = [[39.286425, -6.40605], [39.27601, -6.38861333]];
+        var bounds5 = [[39.286425, -6.38861333], [39.27601, -6.37117666]];
+        var bounds6 = [[39.286425, -6.37117666], [39.27601, -6.35374]];
+
+
+        // add rectangle passing bounds and some basic styles
+        var r1=L.rectangle(bounds1, {color: "blue", weight: 1}).on('click',function(e){handler('CAC1')}).addTo(map);
+        var r2=L.rectangle(bounds2, {color: "blue", weight: 1}).addTo(map);
+        L.rectangle(bounds3, {color: "red", weight: 1}).addTo(map);
+        L.rectangle(bounds4, {color: "green", weight: 1}).addTo(map);
+        L.rectangle(bounds5, {color: "blue", weight: 1}).addTo(map);
+        L.rectangle(bounds6, {color: "green", weight: 1}).addTo(map);
+    
+        </script>
+    </div>
+
+    <div id="back">
+        <div class="done-btn-wrapper">
+            <button id="doneBtn" class="done-btn" data-type="dizmo-button">Done</button>
+        </div>
+    </div>
+
+    <!-- Your own JavaScript (do not remove!) -->
+    <script type="text/javascript" src="application.js"></script>
+    
+</body>
+</html>
