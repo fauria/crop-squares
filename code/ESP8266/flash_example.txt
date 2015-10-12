@@ -1,0 +1,1 @@
+esptool.py --port /dev/tty.usbserial write_flash 0x00000 nodemcu_integer_0.9.6-dev_20150704.bin
