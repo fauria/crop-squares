@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AllowResize</key>
+	<false/>
+	<key>ApiVersion</key>
+	<string>1.2</string>
+	<key>BundleDisplayName</key>
+	<string>Pressure</string>
+	<key>BundleIdentifier</key>
+	<string>org.example.pressure</string>
+	<key>BundleName</key>
+	<string>Pressure</string>
+	<key>BundleShortVersionString</key>
+	<string>0.1</string>
+	<key>BundleVersion</key>
+	<string>0.1</string>
+	<key>Category</key>
+	<string>communication</string>
+	<key>ChangeLog</key>
+	<string>Initial version</string>
+	<key>CloseBoxInsetX</key>
+	<integer>0</integer>
+	<key>CloseBoxInsetY</key>
+	<integer>0</integer>
+	<key>Description</key>
+	<string>Starter dizmo for developers trying out Grace.</string>
+	<key>ElementsVersion</key>
+	<string>1.0</string>
+	<key>ForceUpdate</key>
+	<false/>
+	<key>Height</key>
+	<integer>300</integer>
+	<key>HiddenDizmo</key>
+	<false/>
+	<key>MainHTML</key>
+	<string>index.html</string>
+	<key>MinSpaceVersion</key>
+	<string>0.0.0</string>
+	<key>Tags</key>
+	<array>
+	</array>
+	<key>TitleEditable</key>
+	<true/>
+	<key>Width</key>
+	<integer>250</integer>
+	<key>attributes</key>
+	<dict>
+	</dict>
+	<key>private</key>
+	<dict>
+	</dict>
+	<key>public</key>
+	<dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Wind</title>
+    <script type="text/javascript" src="assets/lib/mqtt/mqttws31.js"></script>
+    <!-- Your own stylesheet (do not remove!)-->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div id="front">
+        <div>
+            <img id="image" style="transition: all 1s ease;" src="assets/compass.png">
+        </div>
+
+        <div id="windDirection">0 º</div>
+        <div id="windSpeed">0 Km/h </div>
+    </div>
+    <div id="back">
+        <div class="done-btn-wrapper">
+            <button id="doneBtn" class="done-btn" data-type="dizmo-button">Done</button>
+        </div>
+    </div>
+
+    <!-- Your own JavaScript (do not remove!) -->
+    <script type="text/javascript" src="application.js"></script>
+</body>
+</html>
