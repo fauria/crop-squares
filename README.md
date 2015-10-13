@@ -1,3 +1,7 @@
+# Crop Squares - Optimize Irrigation of Crop Fields
+
+---
+
 # The event
 
 ![Future Hacks logo and partners](https://raw.githubusercontent.com/fauria/crop-squares/master/pictures/the_event.jpg)
@@ -31,7 +35,7 @@ Meet the team:
 
 We were completely strangers before the hackathon started, but thanks to the excellent attitude and brilliant creativity of each member the vibe was great, making the overall experience absolutely fantastic.
 
-A special mention has to be made to thank our mentors, Luke Allen and Markus from Dizmo, who worked hard with us providing everything we needed to create a fantastic user interface.
+A special mention has to be made to thank our mentors, Luke Allen (<luke.allen@dizmo.com>) and Markus Leutwyler (<mleutwyler@dizmo.com>) from Dizmo, who worked hard with us providing everything we needed to create a fantastic user interface.
 
 # Hardware
 
