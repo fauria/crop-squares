@@ -1,6 +1,5 @@
-# Crop Squares - Optimize Irrigation of Crop Fields
-
----
+Crop Squares - Optimize Irrigation of Crop Fields
+------
 
 # The event
 
@@ -61,7 +60,7 @@ Link to the wishlist: [https://www.sparkfun.com/wish_lists/118213](https://www.s
 
 ### Individual part numbers
 
-DEV-11546, PRT-11980, SEN-08942, SEN-10167, SEN-11824, SEN-13322, DEV-11114, DEV-11286, COM-10969, ROB-11882, KIT-12652, PRT-12046, WRL-13678, PRT-09567, PRT-12796, PRT-12794, PRT-12795.
+> DEV-11546, PRT-11980, SEN-08942, SEN-10167, SEN-11824, SEN-13322, DEV-11114, DEV-11286, COM-10969, ROB-11882, KIT-12652, PRT-12046, WRL-13678, PRT-09567, PRT-12796, PRT-12794, PRT-12795.
 
 
 # Software
@@ -127,7 +126,7 @@ As a gimmick, we outputted a rain and thunderstorm recording though Raspi's audi
 
 ![Crop Squares team in front of the jury](https://raw.githubusercontent.com/fauria/crop-squares/master/pictures/the_pitch.jpg)
 
-The jury was formed by Jorge Arévalo, Software Developer from [Reclamador](https://www.reclamador.es/), Enrique Martín, Innovarion Director for Business from Vodafone, Álvaro Everlet, CTO from [Carriots](https://www.carriots.com/) and Elisa Martín Garijo, Director of Technology and Innovation from IBM Spain, Portugal, Greece and Israel.
+The jury was formed by **Jorge Arévalo**, Software Developer from [Reclamador](https://www.reclamador.es/), **Enrique Martín**, Innovarion Director for Business from Vodafone, **Álvaro Everlet**, CTO from [Carriots](https://www.carriots.com/) and **Elisa Martín Garijo**, Director of Technology and Innovation from IBM Spain, Portugal, Greece and Israel.
 
 We experienced some technical difficulties that prevented us from showing the Dizmo UI, sorting it out by using our slides and the actual display of the rig.
 
