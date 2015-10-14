@@ -60,12 +60,13 @@ Link to the wishlist: [https://www.sparkfun.com/wish_lists/118213](https://www.s
 
 ### Individual part numbers
 
-> DEV-11546, PRT-11980, SEN-08942, SEN-10167, SEN-11824, SEN-13322, DEV-11114, DEV-11286, COM-10969, ROB-11882, KIT-12652, PRT-12046, WRL-13678, PRT-09567, PRT-12796, PRT-12794, PRT-12795.
+> DEV-11546, DEV-09873, PRT-11980, SEN-08942, SEN-10167, SEN-11824, SEN-13322, DEV-11114, DEV-11286, COM-10969, ROB-11882, KIT-12652, PRT-12046, WRL-13678, PRT-09567, PRT-12796, PRT-12794, PRT-12795.
 
 
 # Software
 
 ![Weather station dizmos](https://raw.githubusercontent.com/fauria/crop-squares/master/pictures/software.jpg)
+![Weather station desktop](https://raw.githubusercontent.com/fauria/crop-squares/master/pictures/screenshot.jpg)
 
 For the Raspberry Pi, we used [Raspbian](https://www.raspbian.org/) operating system. 
 
