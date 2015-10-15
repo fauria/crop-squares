@@ -144,3 +144,13 @@ We won two out of five possible awards, receiving an Acer touch screen, a perpet
 ![Best pitch award](https://raw.githubusercontent.com/fauria/crop-squares/master/pictures/award_2.jpg)
 
 Overall, the experience was trully rewarding, and we hope to have the chance to participate in the next edition of Future Hacks.
+
+# Coverage
+
+> October 13th, 2015
+
+### Video: [IBM Futurehacks just a view minutes before final presentation](https://www.youtube.com/watch?v=8ggzHbDdlDE)
+
+> October 15th, 2015
+
+### Article: [Making IoT tech “farmer-friendly” with dizmo](https://www.dizmo.com/making-iot-tech-farmer-friendly-with-dizmo/)
