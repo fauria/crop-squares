@@ -15,7 +15,9 @@ The event was sponsored by [IBM](http://www.ibm.com/), [Dizmo](http://dizmo.com/
 
 The original idea was to "optimize crop field irrigation by using an array of soil moisture sensors and a weather station". 
 
-It aims to improve agricultural methods by continuously reading and sending sensor data to make the irrigation process sustainable and efficient.
+It aims to improve agricultural methods by continuously reading and sending sensor data to make the irrigation process sustainable and efficient, specially in developing countries or rural areas with limited resources. 
+
+The solution had to be not only cost-effective, but inexpensive, being able to 3D print parts or [buid probe replacements](http://www.cheapvegetablegardener.com/how-to-make-cheap-soil-moisture-sensor-2/).
 
 The name of the project, "Crop Squares" was inspired by that concept: instead of alien circles, a square grid would provide information about the status of both the soil and the surrounding environment.
 
