@@ -154,3 +154,7 @@ Overall, the experience was trully rewarding, and we hope to have the chance to 
 > October 15th, 2015
 
 ### Article: [Making IoT tech “farmer-friendly” with dizmo](https://www.dizmo.com/making-iot-tech-farmer-friendly-with-dizmo/)
+
+> November 17th, 2015
+
+###·Article: [Optimizing Crop Yield With IoT](http://hackaday.com/2015/11/16/optimizing-crop-yield-with-iot/)
