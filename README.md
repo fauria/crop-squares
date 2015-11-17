@@ -157,4 +157,4 @@ Overall, the experience was trully rewarding, and we hope to have the chance to 
 
 > November 17th, 2015
 
-###·Article: [Optimizing Crop Yield With IoT](http://hackaday.com/2015/11/16/optimizing-crop-yield-with-iot/)
+### Article: [Optimizing Crop Yield With IoT](http://hackaday.com/2015/11/16/optimizing-crop-yield-with-iot/)
