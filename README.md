@@ -5,7 +5,7 @@ Crop Squares - Optimize Irrigation of Crop Fields
 
 ![Future Hacks logo and partners](https://raw.githubusercontent.com/fauria/crop-squares/master/pictures/the_event.jpg)
 
-This project was developed during [Future Hacks Internet of Things Edition](http://futurehacks.co/), held in Madrid, Spain between Ocrober 9th and 11th 2015.
+This project was developed during [Future Hacks Internet of Things Edition](http://futurehacks.co/), held in Madrid, Spain between October 9th and 11th 2015.
 
 The event was sponsored by [IBM](http://www.ibm.com/), [Dizmo](http://dizmo.com/), [Vodafone](http://www.vodafone.com/), [BQ](http://www.bq.com/) and [IE Business School](http://www.ie.edu/).
 
